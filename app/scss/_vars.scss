@@ -1,0 +1,12 @@
+$text: #000;
+
+
+@function rem($px) {
+  @return ($px / 16) +rem;
+}
+
+@mixin name{
+  
+}
+
+
