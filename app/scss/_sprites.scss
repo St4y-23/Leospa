@@ -1,0 +1,20 @@
+.logo__icon{
+  width: 50px;
+  height: 40px;
+}
+.arrow__icon{
+  width: 17px;
+  height: 17px;
+  fill: #fff;
+  transition: ease-in .2s;
+}
+.play__icon{
+  width: 15px;
+  height: 15px;
+  fill: $red;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+}

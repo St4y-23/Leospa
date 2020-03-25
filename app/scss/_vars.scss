@@ -1,12 +1,33 @@
-$text: #000;
+$text: #555555;
+$green: #263a41;
+$red: #ff817e;
+$title: #1e2528;
 
 
 @function rem($px) {
-  @return ($px / 16) +rem;
+  @return ($px / 15) +rem;
 }
 
-@mixin name{
-  
+@mixin rufina400{
+  font-family: 'Rufina', serif;
+  font-weight: 400;
 }
+
+@mixin rufina700{
+  font-family: 'Rufina', serif;
+  font-weight: 700;
+}
+
+@mixin playfair{
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+
+@mixin centr{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 

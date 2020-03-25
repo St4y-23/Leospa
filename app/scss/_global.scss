@@ -1,6 +1,6 @@
 html{
 	box-sizing: border-box;
-	font-size: 16px;
+	font-size: 15px;
 }
 
 *, *::before, *::after{
@@ -34,9 +34,9 @@ button{
 }
 
 body{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
-	line-height: 1.5;
+	line-height: 1.8;
 	color: $text;
 	min-width: 320px;
 	overflow-x: hidden;
@@ -48,7 +48,7 @@ body{
 	margin: 0 auto;
 }
 .container{
-	max-width: 1170px;
+	max-width: 1140px;
 	padding: 0 15px;
 	margin: 0 auto;
 }
@@ -58,5 +58,11 @@ body{
   width: 100%;
   max-width: 100%;
   height: auto;
+}
+
+.title{
+	@include rufina700;
+	font-size: rem(42);
+	color: $title;
 }
 

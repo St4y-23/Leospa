@@ -2,8 +2,176 @@
 @import "global";
 @import "fonts";
 
+// Helpers
+@import "sprites";
+@import "btn";
 
 
+// Header
+.header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 10;
+}
+.header__inner{
+  padding-top: 20px;
+  display: flex;
+  align-items: flex-end
+}
+.header__logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 180px;
+
+  span{
+    @include playfair;
+    font-size: rem(30);
+    color: #211833;
+    margin-top: -10px;
+    letter-spacing: 2px;
+  }
+}
+
+.nav__link{
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: rem(14);
+  color: $green;
+  & + .nav__link{
+    margin-left: 45px;
+  }
+}
+
+// Intro
+.intro{
+  position: relative;
+
+  &::before{
+    position: absolute;
+    content: '';
+    background-image: url(../img/intro/intro-flower.webp);
+    width: 240px;
+    height: 533px;
+    top: 160px;
+    z-index: -1;
+  }
+}
+
+.no-webp .intro{
+  position: relative;
+
+  &::before{
+    position: absolute;
+    content: '';
+    background-image: url(../img/intro/intro-flower.jpg);
+    width: 240px;
+    height: 533px;
+    top: 160px;
+    z-index: -1;
+  }
+}
+.intro__inner{
+  padding-top: 290px;
+  max-width: 550px;
+  position: relative;
+}
+.intro__suptitle{
+  @include rufina400;
+  color: $red;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.intro__title{
+  @include rufina700;
+  font-size: rem(60);
+  color: $title;
+  line-height: 1.25;
+  margin-bottom: 35px;
+}
+.intro__text{
+  margin-bottom: 50px;
+}
+
+.intro__box{
+  display: flex;
+  align-items: center;
+}
+.intro__btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 55px;
+
+  svg{
+    margin-left: 8px;
+  }
+}
+.intro__link{
+  display: flex;
+  align-items: center;
+}
+.play__icon-box{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fcf5ee;
+  z-index: 1;
+  position: relative;
+  margin-right: 15px;
+}
+
+.intro__bg{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.intro__flower{
+  position: absolute;
+  bottom: -400px;
+  left: -90px;
+  z-index: -1;
+}
+
+// About ////////////////////////////////////
+.about{
+  margin-top: 400px;
+}
+.about__inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 860px;
+  margin: 0 auto;
+  position: relative;
+}
+.about__logo{
+  margin-bottom: 5px;
+}
+.about__suptitle{
+  font-size: rem(20);
+  color: #888888;
+}
+.about__title{
+  margin-bottom: 10px;
+}
+.about__text{
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about__flower{
+  position: absolute;
+  right: -350px;
+  top: 100px;
+  z-index: -1;
+}
 
 
 
