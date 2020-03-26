@@ -22,3 +22,12 @@
     }
   }
 }
+.btn--green{
+  background-color: #30383b;
+  
+  &:hover{
+    background-color: $red;
+    color: #fff;
+    box-shadow: none;
+  }
+}

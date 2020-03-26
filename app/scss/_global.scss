@@ -66,3 +66,73 @@ body{
 	color: $title;
 }
 
+.text{
+	font-weight: 300;
+}
+
+.wrapper{
+  max-width: 660px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.slick-dots{
+	position: absolute;
+	bottom: -60px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+
+	li{
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		background-color: #ffc3c2;
+		transition: linear .2s;
+		margin: 0 6px;
+		cursor: pointer;
+	}
+
+	button{
+		font-size: 0;
+		background: none;
+		border: none;
+	}
+
+	.slick-active{
+		background-color: $red;
+	}
+}
+
+.social{
+	display: flex;
+	align-items: center;
+	visibility: hidden;
+	opacity: 0;
+	margin-top: -25px;
+	transition: linear .2s;
+}
+.social__link{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 7px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 1px solid #363d40;
+	background-color: #fff;
+	transition: linear .2s;
+
+	&:hover{
+		background-color: $red;
+		border-color: $red;
+
+		.social__icon{
+			fill: #fff;
+		}
+	}
+}
+
