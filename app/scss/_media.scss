@@ -1,3 +1,280 @@
-@media (max-width: 0px){
+@media (max-width: 1500px){
+  .about__flower{
+    display: none;
+  }
+  .intro{
+    &::before{
+      display: none;
+    }
+  }
+}
+@media (max-width: 1150px){
+  .feature__inner{
+    flex-wrap: wrap;
+  }
+  .feature__col{
+    width: 50%;
 
+    & + .feature__col{
+      margin-left: 0px;
+    }
+  }
+
+  .appointment__col-right{
+    padding-left: 40px
+  }
+  .input__field{
+    font-size: rem(15);
+  }
+  .input__label{
+    font-size: rem(13);
+  }
+  .input,
+  .message{
+    padding: 10px 0;
+  }
+  .input{
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 900px){
+  .appointment__wrapper{
+    flex-direction: column;
+  }
+  .appointment__col-left,
+  .appointment__col-right{
+    width: 100%;
+  }
+  #container{
+    max-width: 100%;
+  }
+  .appointment__col-right{
+    padding-right: 40px;
+  }
+}
+@media (max-width: 800px){
+  .intro__text,
+  .intro__link{
+    color: #fff;
+  }
+
+  .procedures__inner{
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .procedures__item{
+    max-width: 350px;
+    width: 100%;
+    margin-bottom: 30px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  .testimonials{
+    padding: 50px 0 100px 0;
+  }
+
+  .team__inner{
+    flex-direction: column;
+    align-items: center;
+  }
+  .team__item{
+    max-width: 350px;
+    width: 100%;
+    margin-bottom: 100px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    .social{
+      margin-top: 25px;
+      visibility: visible;
+      opacity: 1;
+    }
+    .team__box{
+      margin-top: -50px;
+    }
+  }
+
+  .contact__inner{
+    flex-direction: column;
+  }
+  .contact__col-left,
+  .contact__col-right,
+  .contact__wrapper,
+  .contact__form{
+    width: 100%;
+  }
+
+  .footer{
+    padding: 50px 0;
+  }
+}
+@media (max-width: 768px){
+  .ham{
+    display: block;
+  }
+  .footer__menu{
+    display: none;
+  }
+  .nav{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    top: 99%;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+    z-index: 8;
+    transform: translateY(-150%);
+    transition: ease-in .3s;
+    box-shadow: 0 0 10px 2px #888888;
+
+    &.show{
+      transform: translateY(0);
+    }
+  }
+  .nav__link{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #000;
+
+    &:last-child{
+      border-bottom: none;
+    }
+    & + .nav__link{
+      margin-left: 0;
+    }
+  }
+  .header__inner{
+    padding-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__logo{
+    margin-right: 0;
+
+    span{
+      font-size: rem(20);
+    }
+  }
+  .header__box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 9;
+  }
+
+  .about{
+    margin-top: 250px;
+  }
+  .intro__flower{
+    display: none;
+  }
+}
+
+@media (max-width: 585px){
+  .about{
+    margin-top: 190px;
+  }
+
+  .testimonials__text{
+    font-size: rem(15);
+  }
+  .testimonials__name{
+    font-size: rem(18);
+  }
+}
+@media (max-width: 550px){
+  .feature__col{
+    width: 100%;
+  }
+
+  .appointment__col-right{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .input,
+  .message{
+    width: 100%;
+  }
+  #container{
+    flex-direction: column;
+  }
+}
+@media (max-width: 490px){
+  .title{
+    font-size: rem(35);
+  }
+
+  .intro__title{
+    font-size: rem(50);
+  }
+  .intro__bg{
+    right: -50%;
+  }
+  .intro__inner{
+    padding-top: 200px;
+  }
+  .intro__box{
+    flex-direction: column;
+  }
+  .intro__link{
+    margin-top: 35px;
+  }
+  .intro__btn{
+    margin-right: 0;
+  }
+
+  .about{
+    margin-top: 100px;
+  }
+  .wrapper,
+  .feature,
+  .procedures,
+  .testimonials,
+  .appointment,
+  .blog,
+  .contact{
+    margin-bottom: 50px;
+  }
+  .team{
+    margin-bottom: 150px;
+  }
+}
+@media (max-width: 430px){
+  .intro__bg{
+    right: 0;
+  }
+  .intro__title{
+    color: #fff;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 769px){
+  .nav{
+    display: block;
+  }
 }

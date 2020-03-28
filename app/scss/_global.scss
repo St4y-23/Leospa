@@ -146,7 +146,11 @@ body{
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  margin-right: -10px;
+	margin-right: -10px;
+	position: relative;
+	z-index: 10;
+	margin-top: -5px;
+
   &:hover{
     .line-burger{
       stroke: $green;
@@ -189,4 +193,6 @@ body{
 .ham8.active .bottom {
   stroke-dashoffset: -64px;
 }
+
+
 
