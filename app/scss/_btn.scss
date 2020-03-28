@@ -1,0 +1,33 @@
+.btn{
+  padding: 13px 0;
+  max-width: 170px;
+  width: 100%;
+  text-align: center;
+  background-color: $red;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: rem(13);
+  // border: 1px solid $red;
+  border-radius: 30px;
+  transition: ease-in .2s;
+
+  &:hover{
+    background-color: #fff;
+    color: $red;
+    box-shadow: 0 2px 20px 2px $red;
+    .arrow__icon{
+      fill: $red;
+      transform: translateX(7px);
+    }
+  }
+}
+.btn--green{
+  background-color: #30383b;
+  
+  &:hover{
+    background-color: $red;
+    color: #fff;
+    box-shadow: none;
+  }
+}
