@@ -79,7 +79,7 @@ $(function () {
     // console.log(elementOffset);
 
     $("html, body").animate({                                 /* При клике плавно скролит до элемента по которому кликнули */
-      scrollTop: elementOffset - 120                           /* - 50px  */
+      scrollTop: elementOffset - 180                           /* - 50px  */
     }, 500);                                                /* Скорость прокрутки где 1000 - 1 секунда */
   });
 
@@ -90,7 +90,7 @@ $(function () {
 
   // GSAP 
   var tl = gsap.timeline({ defaults: { duration: 1 } });
-  tl.from(".anim1", { y: +50, stagger: .3, opacity: 0 })
+  tl.from(".anim1", { y: +50, stagger: .3, opacity: 0 });
 
   // Rellax
   var rellax = new Rellax('.rellax', {
